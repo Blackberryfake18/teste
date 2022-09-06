@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: content-box;
+
+}
+
+
+.logo-opp{
+    padding-top: 5px;
+
+}
+body{
+    background: /*linear-gradient(to right, rgba(84, 30, 232, 0.7), rgba(7, 232, 27, 0.7), rgba(12, 156, 25, 0.7), rgba(45, 5, 156, 0.74), rgba(232, 140, 53, 0.7) ), */url(arquivos/backfs2.jpg);
+    background-size: 500% 500%;
+    width: 100vw;
+    height: 100vh;
+    animation:fundo 3s linear infinite alternate-reverse;    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:fundo 3s linear infinite alternate-reverse;
+
+}
+.gradient{
+    background:linear-gradient(60deg, rgba(84, 30, 232, 0.7), rgba(45, 5, 156, 0.74), rgba(232, 140, 53, 0.7), rgba(232, 217, 7, 0.7), rgba(232, 140, 53, 0.7) );
+    width: 100vw;
+    height: 100vh;
+    animation:fundo 3s linear infinite alternate;
+    background-size: 200% 200%;
+}
+@keyframes fundo{
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 50% 100%;
+}
+75% {
+    background-position: 75% 100%;
+
+}
+100%{
+    background-position: 100% 100%;
+
+}
+
+}
+
+header{
+    height: 110px;
+    
+}
+main{
+    margin: 0px auto;
+    width: 900px;
+    color: black;
+}
+.logo{
+    width: 60px;
+    height: 110px;
+    position: absolute;
+    left: 40px;
+    cursor: pointer;
+    animation: logo 1s infinite alternate;
+   /* animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+    top: 15px;
+}
+@keyframes logo{
+    from{
+        transform: scale(1);
+    }
+    to{
+      transform: scale(1.2);
+    }
+}
+.logo:hover{
+    cursor: pointer;
+    z-index: 1;
+}
+
+.lista-de-links{
+    position: absolute;
+    right: 120px;
+    top:87px;
+   /* border: white solid 2px; ajustar*/
+   transition: 0.5s;
+
+
+}
+.lista-links-conte{
+    animation:links 3s linear infinite alternate;
+}
+@keyframes links{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.05);
+    }
+}
+.lista-links-conte:hover{
+animation: 2s none;
+
+}
+
+.lista-de-links:hover
+{
+    transform: scale(1.2);
+
+    transition: 0.5s;
+
+}
+.itens-links{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 20px;
+    opacity: 0.7;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: all 1s;
+
+
+}
+
+
+
+
+
+ .itens-links a{
+    color: aliceblue;
+    text-decoration: none;
+    filter: blur(2px);
+    transition: all 2s;
+}
+.itens-links a:hover:before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    height: 20px;
+    background-color: green;
+    margin-right: 5px;
+
+}
+.itens-links a:hover{
+    text-decoration: underline;
+    filter: blur(0px);
+    border: black 2px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #fff;
+transition: 0.5s, 2s, 0.5, 1s, 1.5s;
+
+ 
+}

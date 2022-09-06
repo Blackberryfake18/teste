@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    color: white;
+}
+body{
+    background-color: black;
+color: black;
+
+}
+main{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+.logo-hiv-img{
+    opacity: 0.5;
+    animation:logo-hiv 2s linear;
+    cursor: grab;
+    filter: blur(3px);
+    opacity: .2;
+    transition: all 3s;
+
+
+}
+.logo-hiv-img:hover{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 3s;
+}
+@keyframes logo-hiv{
+    from{
+    opacity: 0;
+    }
+    to{
+        opacity: 0.5;
+
+    }
+}
+.display-form{
+    width: 400px;
+    padding: 4px 2px 4px 10px;
+    margin: 20px auto;
+    height: 30px;
+    color: black;
+    animation: lab 2s linear ;
+}
+
+@keyframes lab{
+
+    from{
+        width: 250px;
+        opacity: 0;
+    
+    }
+    
+    to{
+        opacity: 1;
+        width: 400px;
+    }
+   
+
+}
+.descri{
+    display: block;
+    text-align: left;
+
+
+}
+.info{
+    margin: 20px auto;
+}
+.botao{
+    border: white solid 2px;
+    padding: 8px;
+    width: 180px;
+    height: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(45deg,#15615B,#77E6DC,#31E0D2,#32615D,#26ADA2 );
+
+    animation:botao 3s linear infinite ;
+
+}
+.botao:hover{
+   
+}
+@keyframes botao{
+0%{
+    background-position: 0% 50%;
+}
+25%{
+    background-position: 50% 50%;
+}
+100%{
+    background-position: 100% 50%;
+
+}
+
+}
+.logo-hiv{
+    margin: 0px 40px 0px 0px;
+}
+.titulo-hiv{
+    margin: 20px 0px;
+    display: block;
+}
